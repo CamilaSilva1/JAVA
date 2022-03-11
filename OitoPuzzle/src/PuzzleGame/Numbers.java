@@ -13,12 +13,14 @@ import javax.swing.JButton;
 
 public class Numbers {
     
+    public static String NumberTxt;
+    
     //function for check the space empty beetween the numbers and 
     //changing the place of numbers
     public void ChangingNumbers(JButton btn1, JButton btn2){
         
         //getting their text
-        String NumberTxt = btn2.getText();
+        NumberTxt = btn2.getText();
         
         //checking if the number its empty 
         if(NumberTxt == ""){

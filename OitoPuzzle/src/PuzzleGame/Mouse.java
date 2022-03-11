@@ -9,22 +9,23 @@
 package PuzzleGame;
 
 //libraries
-import javax.swing.JFrame;
+
 import javax.swing.JLabel;
+
 
 public class Mouse {
     
     //variables
     
     //mouse click
-    int click = 0;
+    public static int click = 0;
    
     
     //function to count the mouse click
     public void MouseClick(JLabel amounthTxt){
         
         //add value to variable
-        click = click + 1;
+        click++;
         
         //changing the text to the amount of clicks
         amounthTxt.setText(Integer.toString(click));
